@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-11T08:47:44 PST" name="Suite" finished-at="2022-02-11T08:47:55 PST" duration-ms="11354">
+    <groups>
+    </groups>
+    <test started-at="2022-02-11T08:47:44 PST" name="Test" finished-at="2022-02-11T08:47:55 PST" duration-ms="11354">
+      <class name="com.java.selenium.automation.SignUpPageTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.java.selenium.automation.SignUpPageTest@1b7cc17c]" started-at="2022-02-11T08:47:46 PST" name="initialize" finished-at="2022-02-11T08:47:47 PST" duration-ms="832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="signUpWithValidEntry(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.java.selenium.automation.SignUpPageTest@1b7cc17c]" started-at="2022-02-11T08:47:47 PST" name="signUpWithValidEntry" data-provider="getValidSignUpData" finished-at="2022-02-11T08:47:49 PST" duration-ms="2485" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[lastName]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Student]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithValidEntry -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.java.selenium.automation.SignUpPageTest@1b7cc17c]" started-at="2022-02-11T08:47:55 PST" name="tearDown" finished-at="2022-02-11T08:47:55 PST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.java.selenium.automation.SignUpPageTest -->
+      <class name="com.java.selenium.automation.LoginPageTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.java.selenium.automation.LoginPageTest@c8c12ac]" started-at="2022-02-11T08:47:44 PST" name="initialize" finished-at="2022-02-11T08:47:46 PST" duration-ms="1838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="loginWithValidUser(java.lang.String,java.lang.String)[pri:0, instance:com.java.selenium.automation.LoginPageTest@c8c12ac]" started-at="2022-02-11T08:47:47 PST" name="loginWithValidUser" data-provider="getValidUserData" finished-at="2022-02-11T08:47:51 PST" duration-ms="4174" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rahulshettyacademy]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidUser -->
+        <test-method signature="loginWithInvalidUser(java.lang.String,java.lang.String)[pri:0, instance:com.java.selenium.automation.LoginPageTest@c8c12ac]" started-at="2022-02-11T08:47:51 PST" name="loginWithInvalidUser" data-provider="getInValidUserData" finished-at="2022-02-11T08:47:53 PST" depends-on-methods="com.java.selenium.automation.LoginPageTest.loginWithValidUser" duration-ms="1955" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidUser -->
+        <test-method signature="retrievePassword(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.java.selenium.automation.LoginPageTest@c8c12ac]" started-at="2022-02-11T08:47:53 PST" name="retrievePassword" data-provider="resetPassword" finished-at="2022-02-11T08:47:55 PST" depends-on-methods="com.java.selenium.automation.LoginPageTest.loginWithValidUser" duration-ms="2144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123456789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- retrievePassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.java.selenium.automation.LoginPageTest@c8c12ac]" started-at="2022-02-11T08:47:55 PST" name="tearDown" finished-at="2022-02-11T08:47:55 PST" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.java.selenium.automation.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
